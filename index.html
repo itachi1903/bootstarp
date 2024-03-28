@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <main>
+        <header class="container d-flex justify-content-between pt-3 mb-3"
+            style="background-color: #81C408;border-radius: 50px 20px;">
+            <div>
+                <div class="d-inline-block me-2" style="height: 25px;">
+                    <img src="images/map (1).png" alt="location" style="width: 20px;">
+                    <h6 class="text-light text-capitalize d-inline-block" style="height: 100%;">120 street,new york</h6>
+                </div>
+                <div class="d-inline-block" style="height: 25px;">
+                    <img src="images/email.png" alt="location" style="width: 20px;">
+                    <h6 class="text-light d-inline-block" style="height: 100%;">Example@gmail.com</h6>
+                </div>
+            </div>
+            <nav class="breadcrumb me-2">
+                <a class="breadcrumb-item text-light" href="#">Privacy Policy</a>
+                <a class="breadcrumb-item text-light" href="#">Terms of Use</a>
+                <a href="#" class="text-light breadcrumb-item">Sales and Refunds</a>
+            </nav>
+        </header>
+        <div class="sticky-top container-fuild" style="background-color: white;">
+            <nav class="container d-flex justify-content-between align-items-center " id="nav">
+                <h1 style="font-size: 40px;font-weight: bolder;" class="green">Fruitables</h1>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-success">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Shop Detail</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link btn dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu fade">
+                            <li class="dropdown-item">page 1</li>
+                            <li class="dropdown-item">page 2</li>
+                            <li class="dropdown-item">page 3</li>
+                            <li class="dropdown-item">page 4</li>
+                            <li class="dropdown-item">page 5</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class=" d-flex gap-3" style="width: fit-content;">
+                    <img src="images/magnifying-glass.png" alt="search" style="width: 30px;" />
+                    <img src="images/grocery-store.png" alt="search" style="width: 30px;" />
+                    <img src="images/account.png" alt="search" style="width: 30px;" />
+                </div>
+            </nav>
+        </div>
+        <section class="container-fuild">
+            <div class="row p-0 m-0">
+                <div class="col-lg d-flex justify-content-center align-items-center p-5"
+                    style="backdrop-filter: blur(5px);">
+                    <div class="container">
+                        <h3 class="text my-2">100% Organic Foods</h3>
+                        <h1 style="font-weight: 900;font-size: 3rem;" class="green my-2">Organic Veggies & Fruits Foods
+                        </h1>
+                        <div class="p-2 rounded-pill bg-light row my-2" style="border: 1px solid #81C408;">
+                            <input type="text" id="submit" class="col-8" placeholder=" Search for food..."
+                                style="border: none;outline: none;padding-left: 10px;" />
+                            <input type="submit" value="Submit Now" class="rounded-pill col-4 p-1"
+                                style="background-color: #81C408;outline: none; border: none;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg d-flex justify-content-center align-items-center">
+                    <div id="demo" class="carousel slide w-70 rounded" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active card">
+                                <img src="images/Frame of fresh vegetables on wooden background with copy space.jpeg"
+                                    alt="slide-images" class="d-block w-100 card-img-top">
+                                <div class=" card-img-overlay d-flex justify-content-center align-items-center">
+                                    <h1 class=" text-light p-1 rounded" style="background-color: #81C408;">Vegetables
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="carousel-item card">
+                                <img src="images/Rainbow fruits background featuring top view, white, and view by Liliya Trott Photos on @creativemarket.jpeg"
+                                    alt="slide-images" class="d-block w-100 card-img-top">
+                                <div class=" card-img-overlay d-flex justify-content-center align-items-center">
+                                    <h1 class="text-light p-1 rounded" style="background-color: #81C408;">Fruits</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-pill"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-pill"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container my-5 row m-auto gap-3">
+            <div class="card col-lg p-4 gap-2 card-iamge">
+                <img src="images/car.png" alt="shipping" class="card-img-top p-3 rounded-circle d-block m-auto"
+                    style="width: 100px; background-color: #FFB524;">
+                <div class="card-body">
+                    <h4 class="text-center">Free Shipping</h4>
+                    <h6 class="text-center">Free on order over $300</h6>
+                </div>
+            </div>
+            <div class="card col-lg  p-4 gap-2 card-iamge">
+                <img src="images/user.png" alt="shipping" class="card-img-top p-3 rounded-circle d-block m-auto"
+                    style="width: 100px;background-color: #FFB524;">
+                <div class="card-body">
+                    <h4 class="text-center">Security Payment</h4>
+                    <h6 class="text-center">100% security payment</h6>
+                </div>
+            </div>
+            <div class="card col-lg  p-4 gap-2 card-iamge">
+                <img src="images/return-box (1).png" alt="shipping"
+                    class="card-img-top p-3 rounded-circle d-block m-auto"
+                    style="width: 100px;background-color: #FFB524;">
+                <div class="card-body">
+                    <h4 class="text-center">30 Day Return</h4>
+                    <h6 class="text-center">30 day money guarantee</h6>
+                </div>
+            </div>
+            <div class="card col-lg  p-4 gap-2 card-iamge">
+                <img src="images/call.png" alt="shipping" class="card-img-top p-3 rounded-circle d-block m-auto"
+                    style="width: 100px;background-color: #FFB524;">
+                <div class="card-body">
+                    <h4 class="text-center">24/7 Support</h4>
+                    <h6 class="text-center">Support every time fast</h6>
+                </div>
+            </div>
+        </section>
+        <section class="container my-5">
+            <div class="d-flex justify-content-between">
+                <h1 style="font-weight: 900;">
+                    Our Organic Products
+                </h1>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="" class="nav-link rounded-pill" style="background-color: #FFB524;">All
+                            Products</a></li>
+                    <li class="nav-item"><a href="" class="nav-link rounded-pill">Vegetables</a></li>
+                    <li class="nav-item"><a href="" class="nav-link rounded-pill">Fruits</a></li>
+                    <li class="nav-item"><a href="" class="nav-link rounded-pill">Bread</a></li>
+                    <li class="nav-item"><a href="" class="nav-link rounded-pill">meat</a></li>
+                </ul>
+            </div>
+            <div class="row justify-content-center">
+                <div class="card col-lg-3" style="max-width: 350px;">
+                    <img src="images/apple.jpeg" alt="apple" class="card-img-top">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="card-title text-capitalize text-center">apple</h3>
+                        <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                            maxime?</h5>
+                        <a href="#" class="btn text-capitalize rounded-pill" style="background-color: #FFB524;">Add to
+                            cart</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3" style="max-width: 350px;">
+                    <img src="images/banana.jpeg" alt="apple" class="card-img-top">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="card-title text-capitalize text-center">banana</h3>
+                        <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                            maxime?</h5>
+                        <a href="#" class="btn text-capitalize rounded-pill" style="background-color: #FFB524;">Add to
+                            cart</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3" style="max-width: 350px;">
+                    <img src="images/lemon.jpeg" alt="apple" class="card-img-top">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="card-title text-capitalize text-center">lemon</h3>
+                        <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                            maxime?</h5>
+                        <a href="#" class="btn text-capitalize rounded-pill" style="background-color: #FFB524;">Add to
+                            cart</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3" style="max-width: 350px;">
+                    <img src="images/mix.jpeg" alt="apple" class="card-img-top">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="card-title text-capitalize text-center">mix fruits</h3>
+                        <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                            maxime?</h5>
+                        <a href="#" class="btn text-capitalize rounded-pill" style="background-color: #FFB524;">Add to
+                            cart</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3" style="max-width: 350px;">
+                    <img src="images/orange.jpeg" alt="apple" class="card-img-top">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="card-title text-capitalize text-center">orange</h3>
+                        <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                            maxime?</h5>
+                        <a href="#" class="btn text-capitalize rounded-pill" style="background-color: #FFB524;">Add to
+                            cart</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3" style="max-width: 350px;">
+                    <img src="images/watermelon.jpeg" alt="apple" class="card-img-top">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="card-title text-capitalize text-center">watermelon</h3>
+                        <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                            maxime?</h5>
+                        <a href="#" class="btn text-capitalize rounded-pill" style="background-color: #FFB524;">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container my-5 row bg-light m-auto justify-content-center gap-3 p-5">
+            <div class="card col-lg" style="max-width: 350px;">
+                <img class="card-img-top" src="images/apple.jpeg" alt="Title" />
+                <div class="card-body" style="background-color: #FFB524;">
+                    <h3 class="card-title">Fresh Apples</h3>
+                    <h4 class="card-text text-light">20% OFF</h4>
+                </div>
+            </div>
+            <div class="card col-lg" style="max-width: 350px;">
+                <img class="card-img-top" src="images/banana.jpeg" alt="Title" />
+                <div class="card-body" style="background-color: #FFB524;">
+                    <h3 class="card-title">Tasty Fruits</h3>
+                    <h4 class="card-text text-light">Free delivery</h4>
+                </div>
+            </div>
+            <div class="card col-lg" style="max-width: 350px;">
+                <img class="card-img-top" src="images/orange.jpeg" alt="Title" />
+                <div class="card-body" style="background-color: #FFB524;">
+                    <h3 class="card-title">Exotic Vegitable</h3>
+                    <h4 class="card-text text-light">Discount 30$</h4>
+                </div>
+            </div>
+        </section>
+        <section class="container my-5">
+            <h1 style="font-weight: 900;">Fresh Organic Vegetables</h1>
+
+            <div class="carousel slide" id="demo" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center my-2 w-100">
+                            <div class="card col-4">
+                                <img src="images/apple.jpeg" alt="apple" class="card-img-top">
+                                <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                                    <h3 class="card-title text-capitalize text-center">apple</h3>
+                                    <h5 class="text-center"
+                                        style="font-size: clamp(0.9375rem, 0.6393rem + 0.9542vw, 1.25rem);">Lorem ipsum
+                                        dolor sit amet, consectetur adipisicing elit.
+                                        Deleniti, maxime?</h5>
+                                    <a href="#" class="btn text-capitalize rounded-pill"
+                                        style="background-color: #FFB524;">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="card col-4">
+                                <img src="images/banana.jpeg" alt="apple" class="card-img-top">
+                                <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                                    <h3 class="card-title text-capitalize text-center">banana</h3>
+                                    <h5 class="text-center"
+                                        style="font-size: clamp(0.9375rem, 0.6393rem + 0.9542vw, 1.25rem);">Lorem ipsum
+                                        dolor sit amet, consectetur adipisicing elit.
+                                        Deleniti, maxime?</h5>
+                                    <a href="#" class="btn text-capitalize rounded-pill"
+                                        style="background-color: #FFB524;">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="card col-4">
+                                <img src="images/lemon.jpeg" alt="apple" class="card-img-top">
+                                <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                                    <h3 class="card-title text-capitalize text-center">lemon</h3>
+                                    <h5 class="text-center"
+                                        style="font-size: clamp(0.9375rem, 0.6393rem + 0.9542vw, 1.25rem);">Lorem ipsum
+                                        dolor sit amet, consectetur adipisicing elit.
+                                        Deleniti, maxime?</h5>
+                                    <a href="#" class="btn text-capitalize rounded-pill"
+                                        style="background-color: #FFB524;">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center my-2 w-100">
+                            <div class="card col-4">
+                                <img src="images/orange.jpeg" alt="apple" class="card-img-top">
+                                <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                                    <h3 class="card-title text-capitalize text-center">orange</h3>
+                                    <h5 class="text-center"
+                                        style="font-size: clamp(0.9375rem, 0.6393rem + 0.9542vw, 1.25rem);">Lorem ipsum
+                                        dolor sit amet, consectetur adipisicing elit.
+                                        Deleniti, maxime?</h5>
+                                    <a href="#" class="btn text-capitalize rounded-pill"
+                                        style="background-color: #FFB524;">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="card col-4">
+                                <img src="images/watermelon.jpeg" alt="apple" class="card-img-top">
+                                <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                                    <h3 class="card-title text-capitalize text-center" style="font-size: 25px;">
+                                        watermelon</h3>
+                                    <h5 style="font-size: clamp(0.9375rem, 0.6393rem + 0.9542vw, 1.25rem);">Lorem ipsum
+                                        dolor sit amet,
+                                        consectetur adipisicing elit.
+                                        Deleniti, maxime?</h5>
+                                    <a href="#" class="btn text-capitalize rounded-pill"
+                                        style="background-color: #FFB524;">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="card col-4">
+                                <img src="images/Blackberry with leaves stock photo_ Image of leaf, sweet - 52062642.jpeg"
+                                    alt="apple" class="card-img-top">
+                                <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                                    <h3 class="card-title text-capitalize text-center">blackBerry</h3>
+                                    <h5 class="text-center"
+                                        style="font-size: clamp(0.9375rem, 0.6393rem + 0.9542vw, 1.25rem);">Lorem ipsum
+                                        dolor sit amet, consectetur adipisicing elit.
+                                        Deleniti, maxime?</h5>
+                                    <a href="#" class="btn text-capitalize rounded-pill"
+                                        style="background-color: #FFB524;">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fuild border p-5 my-5" style="
+            background-image: url(images/fruits2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height:70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        ">
+            <h1 class="text-light" style="font-size: 3rem;font-weight: 900;">Fresh Exotic Fruits</h1>
+            <h1 class="text">in Our Store</h1>
+            <h2 class="text-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque amet sequi ipsa possimus! Tenetur
+                aliquam error natus, voluptate atque modi!
+            </h2>
+        </section>
+        <section class="container my-5">
+            <h1 class="w-100 text-center" style="font-weight: 900;font-size: 3rem;">Bestseller Products</h1>
+            <h6 class="w-100 text-center">Latin words, combined with a handful of model sentence structures, to generate
+                Lorem Ipsum which looks reasonable.</h6>
+            <div class="row justify-content-center">
+                <div class="card col-lg-3" style="max-width: 350px;">
+                    <img src="images/apple.jpeg" alt="apple" class="card-img-top">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="card-title text-capitalize text-center">apple</h3>
+                        <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                            maxime?</h5>
+                        <div class="container-fuild h1 text">&starf; &starf; &starf; &starf; &starf;</div>
+                        <a href="#" class="btn text-capitalize rounded-pill" style="background-color: #FFB524;">Add to
+                            cart</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3" style="max-width: 350px;">
+                    <img src="images/banana.jpeg" alt="apple" class="card-img-top">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="card-title text-capitalize text-center">banana</h3>
+                        <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                            maxime?</h5>
+                        <div class="container-fuild h1 text">&starf; &starf; &starf; &starf; </div>
+                        <a href="#" class="btn text-capitalize rounded-pill" style="background-color: #FFB524;">Add to
+                            cart</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3" style="max-width: 350px;">
+                    <img src="images/lemon.jpeg" alt="apple" class="card-img-top">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="card-title text-capitalize text-center">lemon</h3>
+                        <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                            maxime?</h5>
+                        <div class="container-fuild h1 text">&starf; &starf; &starf;</div>
+                        <a href="#" class="btn text-capitalize rounded-pill" style="background-color: #FFB524;">Add to
+                            cart</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3" style="max-width: 350px;">
+                    <img src="images/mix.jpeg" alt="apple" class="card-img-top">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="card-title text-capitalize text-center">mix fruits</h3>
+                        <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                            maxime?</h5>
+                        <div class="container-fuild h1 text">&starf; &starf; &starf; &starf; &starf;</div>
+                        <a href="#" class="btn text-capitalize rounded-pill" style="background-color: #FFB524;">Add to
+                            cart</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3" style="max-width: 350px;">
+                    <img src="images/orange.jpeg" alt="apple" class="card-img-top">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="card-title text-capitalize text-center">orange</h3>
+                        <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                            maxime?</h5>
+                        <div class="container-fuild h1 text">&starf; &starf; &starf; &starf; &starf;</div>
+                        <a href="#" class="btn text-capitalize rounded-pill" style="background-color: #FFB524;">Add to
+                            cart</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3" style="max-width: 350px;">
+                    <img src="images/watermelon.jpeg" alt="apple" class="card-img-top">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="card-title text-capitalize text-center">watermelon</h3>
+                        <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                            maxime?</h5>
+                        <div class="container-fuild h1 text">&starf; &starf; &starf; &starf; &starf;</div>
+                        <a href="#" class="btn text-capitalize rounded-pill" style="background-color: #FFB524;">Add to
+                            cart</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3" style="max-width: 350px;">
+                    <img src="images/Blackberry with leaves stock photo_ Image of leaf, sweet - 52062642.jpeg"
+                        alt="apple" class="card-img-top">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="card-title text-capitalize text-center">Black Berry</h3>
+                        <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                            maxime?</h5>
+                        <div class="container-fuild h1 text">&starf; &starf; &starf; &starf; &starf;</div>
+                        <a href="#" class="btn text-capitalize rounded-pill" style="background-color: #FFB524;">Add to
+                            cart</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3" style="max-width: 350px;">
+                    <img src="images/Citrus lime fruit half isolated on white background.jpeg" alt="apple"
+                        class="card-img-top">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="card-title text-capitalize text-center">Citrus Lime</h3>
+                        <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
+                            maxime?</h5>
+                        <div class="container-fuild h1 text">&starf; &starf; &starf; &starf; &starf;</div>
+                        <a href="#" class="btn text-capitalize rounded-pill" style="background-color: #FFB524;">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container my-5 row m-auto gap-3 p-5 rounded" style="background-color: rgb(216, 215, 215);">
+            <div class="card col-lg p-4 gap-2 card-iamge">
+                <img src="images/multiple-users-silhouette.png" alt="shipping"
+                    class="card-img-top p-3 rounded-circle d-block m-auto">
+                <div class="card-body">
+                    <h4 class="text-center text">SATISFIED CUSTOMERS</h4>
+                    <h6 class="text-center h2">1963</h6>
+                </div>
+            </div>
+            <div class="card col-lg  p-4 gap-2 card-iamge">
+                <img src="images/multiple-users-silhouette.png" alt="shipping"
+                    class="card-img-top p-3 rounded-circle d-block m-auto">
+                <div class="card-body">
+                    <h4 class="text-center text">QUALITY OF SERVICE</h4>
+                    <h6 class="text-center h2">90%</h6>
+                </div>
+            </div>
+            <div class="card col-lg  p-4 gap-2 card-iamge">
+                <img src="images/multiple-users-silhouette.png" alt="shipping"
+                    class="card-img-top p-3 rounded-circle d-block m-auto">
+                <div class="card-body">
+                    <h4 class="text-center text">QUALITY CERTIFICATES</h4>
+                    <h6 class="text-center h2">33</h6>
+                </div>
+            </div>
+            <div class="card col-lg  p-4 gap-2 card-iamge">
+                <img src="images/multiple-users-silhouette.png" alt="shipping"
+                    class="card-img-top p-3 rounded-circle d-block m-auto">
+                <div class="card-body">
+                    <h4 class="text-center text">AVAILABLE PRODUCTS</h4>
+                    <h6 class="text-center h2">795</h6>
+                </div>
+            </div>
+        </section>
+        <section class="container my-5">
+            <h1 class="w-100 text-center green h3">Our Testimonial</h1>
+            <h6 class="w-100 text-center" style="font-weight: 900;font-size: 3rem;">Our Client Saying!</h6>
+            <div class="carousel slide" id="demoOne" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-between">
+                            <div class="card col-5" style="border: none;">
+                                <div class="card-body">
+                                    <img src="images/multiple-users-silhouette.png" alt="profile" class="card-img-top"
+                                        style="width:150px;aspect-ratio:none;">
+                                    <h1 class="h3">Profile 1</h1>
+                                    <h1 class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+                                        nulla.</h1>
+                                </div>
+                            </div>
+                            <div class="card col-5" style="border:none;">
+                                <div class="card-body">
+                                    <img src="images/multiple-users-silhouette.png" alt="profile" class="card-img-top"
+                                        style="width:150px;aspect-ratio:none;">
+                                    <h1 class="h3">Profile 2</h1>
+                                    <h1 class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+                                        nulla.</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-between">
+                            <div class="card col-5" style="border: none;">
+                                <div class="card-body">
+                                    <img src="images/multiple-users-silhouette.png" alt="profile" class="card-img-top"
+                                        style="width:150px;aspect-ratio:none;">
+                                    <h1 class="h3">Profile 3</h1>
+                                    <h1 class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+                                        nulla.</h1>
+                                </div>
+                            </div>
+                            <div class="card col-5" style="border: none;">
+                                <div class="card-body">
+                                    <img src="images/multiple-users-silhouette.png" alt="profile" class="card-img-top"
+                                        style="width:150px;aspect-ratio:none;">
+                                    <h1 class="h3">Profile 4</h1>
+                                    <h1 class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+                                        nulla.</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-between">
+                            <div class="card col-5" style="border:none;">
+                                <div class="card-body">
+                                    <img src="images/multiple-users-silhouette.png" alt="profile" class="card-img-top"
+                                        style="width:150px;aspect-ratio:none;">
+                                    <h1 class="h3">Profile 5</h1>
+                                    <h1 class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+                                        nulla.</h1>
+                                </div>
+                            </div>
+                            <div class="card col-5" style="border:none;">
+                                <div class="card-body">
+                                    <img src="images/multiple-users-silhouette.png" alt="profile" class="card-img-top"
+                                        style="width:150px;aspect-ratio:none;">
+                                    <h1 class="h3">Profile 6</h1>
+                                    <h1 class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+                                        nulla.</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fuild p-5" style="background-color: #81C408;">
+            <h1 class="text">Fruitables</h1>
+            <h6 class="text-light">Fresh products</h6>
+            <div class="container">
+                <div class="p-2 rounded-pill bg-light row my-2" style="border: 1px solid #81C408;">
+                    <input type="text" id="submit" class="col-8" placeholder=" Search for food..."
+                        style="border: none;outline: none;padding-left: 10px;" />
+                    <input type="submit" value="Submit Now" class="rounded-pill col-4 p-1"
+                        style="background-color: #81C408;outline: none; border: none;">
+                </div>
+            </div>
+            <hr>
+            <div class="row container">
+                <div class="col-lg-3">
+                    <h4 style="font-weight: 900;" class="text-light">Why People Like us!</h4>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint reiciendis facere necessitatibus
+                        harum neque impedit est dolore minus! Inventore, possimus.</h6>
+                </div>
+                <div class="col-lg-3">
+                    <h4 style="font-weight: 900;" class="text-light">Shop Info</h4>
+                    <h6>About Us</h6>
+                    <h6>Contact Us</h6>
+                    <h6>Privacy Policy</h6>
+                    <h6>Terms & Condition</h6>
+                    <h6>Return Policy</h6>
+                    <h6>FAQs & Help</h6>
+                </div>
+                <div class="col-lg-3">
+                    <h4 style="font-weight: 900;" class="text-light">Account</h4>
+                    <h6>My Account</h6>
+                    <h6>Shop Details</h6>
+                    <h6>Shopping Cart</h6>
+                    <h6>Wishlist</h6>
+                    <h6>Order History</h6>
+                    <h6>International Orders</h6>
+                </div>
+                <div class="col-lg-3">
+                    <h4 style="font-weight: 900;" class="text-light">Contact</h4>
+                    <h6>Address: 1429 Netus Rd, NY 48247</h6>
+                    <h6>Email: example@gmail.com</h6>
+                    <h6>Phone: +0123 4567 8910</h6>
+                    <h6>Payment Accepted</h6>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

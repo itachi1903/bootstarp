@@ -1,0 +1,38 @@
+/* 
+ bg - #81C408
+ text - 
+ logo - #FFB524
+*/
+a {
+    transition: all  300ms ease-in-out !important;
+    color: black !important;
+}
+header a:hover {
+    color:#FFB524 !important ;
+}
+#nav  a:hover {
+    color:#81C408 !important;
+}
+.text {
+    color: #FFB524 !important;
+}
+.green {
+    color:#81C408 !important;
+}
+.card {
+    overflow: hidden !important;
+}
+.card-img-top {
+    overflow: hidden !important;
+    transition: all 500ms ease-in-out !important;
+}
+.card:hover .card-img-top {
+    transform: scale(1.1) !important;
+}
+.card .card-img-top {
+    aspect-ratio: 2/1 !important;
+}
+.card-iamge  .card-img-top{
+    width: 150px !important;
+    aspect-ratio:0/0 !important;
+}
